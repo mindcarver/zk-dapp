@@ -76,3 +76,21 @@ snarkjs groth16 prove multiplier2_0001.zkey witness.wtns proof.json public.json
 ```
 snarkjs groth16 verify verification_key.json public.json proof.json
 ```
+
+## Generate solidity verifier
+```
+snarkjs zkey export solidityverifier circuit_0001.zkey verifier.sol
+```
+
+## Deploy solidity verifier
+
+## Test Verify Proof
+1. Generate proof params
+```
+snarkjs generatecall
+```
+
+2. Test
+```
+npx hardhat test
+```
